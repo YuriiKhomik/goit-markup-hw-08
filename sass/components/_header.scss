@@ -7,6 +7,22 @@
 .header__inner {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+}
+
+// мобільне меню
+
+.header__mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: $tablet) {
+        display: none;        
+    }
 }
 
 .header-section {
