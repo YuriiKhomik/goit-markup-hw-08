@@ -1,7 +1,6 @@
 .header {
     background-color: #FFFFFF;
     border-bottom: 1px solid #ECECEC;
-    ;
 }
 
 .header-section {
@@ -14,6 +13,8 @@
 .navigation {
     display: flex;
     align-items: center;
+
+    outline: 1px solid red;
 }
 
 .site-nav {
