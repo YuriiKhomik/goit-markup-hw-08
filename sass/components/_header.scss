@@ -4,6 +4,11 @@
     ;
 }
 
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
 .header-section {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -20,7 +25,7 @@
     position: relative;
 
     display: flex;
-    margin-left: 93px;
+    margin-left: 92px;
 }
 
 .site-nav__item:not(:first-child) {
@@ -75,7 +80,7 @@
 
 .contact {
     display: flex;
-    margin-left: auto;
+    margin-left: 315px;
 }
 
 .contact__item {
@@ -83,7 +88,7 @@
 }
 
 .contact__item:not(:first-child) {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .contact__link {
