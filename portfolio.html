@@ -11,10 +11,56 @@
     <!--Хедер-->
     <header class="header header-section">
       <div class="container">
-        <nav class="navigation">
+        <div class="mobile-header">
           <a class="logo" href="./index.html" lang="en"
-            ><span class="logo__web">Web</span
-            ><span class="logo__studio">Studio</span></a
+            ><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a
+          >
+
+          <button
+            type="button"
+            class="menu-btn"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="20" height="20" aria-label="Перемикач мобільного меню">
+              <use class="menu-btn__menu" href="./images/icons.svg#icon-mobile-menu"></use>
+              <use class="menu-btn__close" href="./images/icons.svg#icon-moile-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="mob-nav">
+            <li class="mob-nav__item">
+              <a href="./index.html" class="mob-nav__link">Студія</a>
+            </li>
+            <li class="mob-nav__item mob-nav__item--current">
+              <a href="./portfolio.html" class="mob-nav__link--current">Портфоліо</a>
+            </li>
+            <li class="mob-nav__item">
+              <a href="" class="mob-nav__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mob-contact">
+            <li class="mob-contact__item">
+              <a class="mob-contact__link" href="tel:+380961111111">+38 096 111 11 11 </a>
+            </li>
+            <li class="mob-contact__item">
+              <a class="mob-contact__link" href="mailto:info@devstudio.com">info@devstudio.com </a>
+            </li>
+          </ul>
+          <ul class="mob-social">
+            <li class="mob-social__item"><a class="mob-social__link" href="#">Instagram</a></li>
+            <li class="mob-social__item"><a class="mob-social__link" href="#">Twitter</a></li>
+            <li class="mob-social__item"><a class="mob-social__link" href="#">Facebook</a></li>
+            <li class="mob-social__item"><a class="mob-social__link" href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div class="main-header">
+          <a class="logo" href="./index.html" lang="en"
+            ><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a
           >
 
           <ul class="site-nav">
@@ -22,9 +68,7 @@
               <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
             <li class="site-nav__item site-nav__item--current">
-              <a href="./portfolio.html" class="site-nav__link--current"
-                >Портфоліо</a
-              >
+              <a href="./portfolio.html" class="site-nav__link--current">Портфоліо</a>
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакти</a>
@@ -49,7 +93,7 @@
               </a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -88,9 +132,9 @@
                     width="370"
                   />
                   <p class="card__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="card__footer">
@@ -109,9 +153,9 @@
                     width="370"
                   />
                   <p class="card__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="card__footer">
@@ -130,9 +174,9 @@
                     width="370"
                   />
                   <p class="card__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="card__footer">
@@ -151,9 +195,9 @@
                     width="370"
                   />
                   <p class="card__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="card__footer">
@@ -172,9 +216,9 @@
                     width="370"
                   />
                   <p class="card__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="card__footer">
@@ -193,9 +237,9 @@
                     width="370"
                   />
                   <p class="card__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="card__footer">
@@ -207,16 +251,11 @@
             <li class="portfolio__item">
               <div class="card">
                 <div class="card__photo-wrap">
-                  <img
-                    class="card__image"
-                    src="./images/portfolio7.jpg"
-                    alt="Журнал"
-                    width="370"
-                  />
+                  <img class="card__image" src="./images/portfolio7.jpg" alt="Журнал" width="370" />
                   <p class="card__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="card__footer">
@@ -228,16 +267,11 @@
             <li class="portfolio__item">
               <div class="card">
                 <div class="card__photo-wrap">
-                  <img
-                    class="card__image"
-                    src="./images/portfolio8.jpg"
-                    alt="Бирка"
-                    width="370"
-                  />
+                  <img class="card__image" src="./images/portfolio8.jpg" alt="Бирка" width="370" />
                   <p class="card__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="card__footer">
@@ -256,9 +290,9 @@
                     width="370"
                   />
                   <p class="card__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="card__footer">
@@ -295,14 +329,10 @@
                 >
               </li>
               <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__link"
-                  >info@devstudio.com</a
-                >
+                <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
               </li>
               <li class="address__item">
-                <a href="tel:+380961111111" class="address__link"
-                  >+38 096 111 11 11</a
-                >
+                <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -365,5 +395,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
