@@ -1,7 +1,15 @@
 .filter {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    // display:inline;
+
+    
+    // justify-content: center;
+    // margin-bottom: 50px;
+}
+
+.filter__item {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 15px;
 }
 
 .filter__button {
@@ -29,6 +37,6 @@
     }
 }
 
-.filter__item:not(:first-child) {
-    margin-left: 8px;
-}
+// .filter__item:not(:first-child) {
+//     margin-left: 8px;
+// }
