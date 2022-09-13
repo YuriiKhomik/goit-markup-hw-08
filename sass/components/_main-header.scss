@@ -86,7 +86,7 @@
 }
 
 .contact__item:first-child {
-    @media screen and (min-width:$tablet), (max-width:$desktop) {
+    @media screen and (min-width:$tablet) and (max-width:$desktop) {
         margin-bottom: 10px;    
     }
 }
