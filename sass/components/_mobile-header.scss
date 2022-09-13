@@ -76,6 +76,10 @@
     margin-bottom: 32px;
 }
 
+.mob-nav__link--current {
+    color: var(--accent-color);
+}
+
 .mob-contact {
     display: block;
     margin-bottom: 64px;
@@ -102,6 +106,7 @@
 .mob-social {
     display: flex;
     align-items: center;
+    margin-right: auto;
 
     font-weight: 500;
     font-size: 18px;
@@ -118,6 +123,10 @@
 
     &:not(:first-child) {
         border-left:1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &:first-child {
+        padding-left: 0px;
     }
 }
 
