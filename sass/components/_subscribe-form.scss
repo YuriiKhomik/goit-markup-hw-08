@@ -1,21 +1,22 @@
 .subscribe {
     display: flex;
     flex-direction: column;
-    margin-left: 93px;
-    margin-top: 12px;
+    align-items: center;
+    text-align: center;
 }
 
 .subscribe__form {
-    width: 570px;
+    width: 100%;
 }
 
 .subscribe__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding-top: 15px;
     padding-right: 16px;
     padding-bottom: 15px;
     padding-left: 16px;
+    margin-bottom: 30px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: transparent;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -31,37 +32,38 @@
 }
 
 .subscribe__field {
-    position: relative;
+    // position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    
 }
 
-.subscribe__label {
-    position: absolute;
-    top: 15px;
-    left: 16px;
+// .subscribe__label {
+//     position: absolute;
+//     top: 15px;
+//     left: 16px;
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.25;
+//     letter-spacing: 0.03em;
+//     color: rgba(255, 255, 255, 0.6);
+// }
 
-.subscribe__input:focus+.subscribe__label,
-.subscribe__input:not(:placeholder-shown)+.subscribe__label {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+// .subscribe__input:focus+.subscribe__label,
+// .subscribe__input:not(:placeholder-shown)+.subscribe__label {
+//     position: absolute;
+//     white-space: nowrap;
+//     width: 1px;
+//     height: 1px;
+//     overflow: hidden;
+//     border: 0;
+//     padding: 0;
+//     clip: rect(0 0 0 0);
+//     clip-path: inset(50%);
+//     margin: -1px;
+// }
 
 .subscribe__button {
     display: flex;

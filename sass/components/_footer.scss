@@ -3,6 +3,8 @@
     padding-bottom: 60px;
 
     background-color: var(--third-bg-color);
+
+    text-align: center;
 }
 
 .footer-section {
@@ -13,6 +15,8 @@
 
 .footer-section>.container {
     display: flex;
+    flex-direction: column;
+    justify-items: center;
 }
 
 .footer-logo {
@@ -20,7 +24,7 @@
 }
 
 .address__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .address__link {
@@ -51,13 +55,15 @@
     }
 }
 
+.footer-contacts {
+    margin-bottom: 60px;
+}
 
 .footer-social {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
-    margin-top: 12px;
-    margin-left: 70px;
+    align-items: center;
+    margin-bottom: 60px;
 }
 
 .footer-social__title,
