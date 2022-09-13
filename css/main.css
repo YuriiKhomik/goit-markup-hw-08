@@ -276,6 +276,30 @@ img {
 }
 
 /* стилізація мобільного хедера */
+.menu-btn {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+}
+.menu-btn:hover .menu-btn__menu, .menu-btn:focus .menu-btn__menu {
+  fill: var(--accent-color);
+}
+.menu-btn .menu-btn__close {
+  display: none;
+}
+.menu-btn.is-open .menu-btn__close {
+  display: block;
+}
+.menu-btn.is-open .menu-btn__close:hover, .menu-btn.is-open .menu-btn__close:focus {
+  fill: var(--accent-color);
+}
+.menu-btn.is-open .menu-btn__menu {
+  display: none;
+}
+
 .mobile-header {
   display: flex;
   align-items: center;
@@ -304,8 +328,60 @@ img {
   display: block;
 }
 
-.main-header {
+.mob-nav {
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--tittle-text-color);
+  margin-bottom: 306px;
+}
+
+.mob-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-contact {
+  display: block;
+  margin-bottom: 64px;
+}
+
+.mob-contact__item:first-child {
+  margin-bottom: 32px;
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.mob-contact__item:last-child {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mob-social {
   display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mob-social__item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 22px;
+}
+.mob-social__item:not(:first-child) {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .header {
@@ -339,35 +415,4 @@ img {
 /* Стилізація Картки портфоліо */
 /* футер */
 /* Фрпма підписки */
-/* Модальне вікно+бекдроп */
-.menu-btn {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: none;
-  background-color: transparent;
-  z-index: 1;
-}
-.menu-btn .menu-btn__close {
-  display: none;
-}
-.menu-btn.is-open .menu-btn__close {
-  display: block;
-}
-.menu-btn.is-open .menu-btn__menu {
-  display: none;
-}
-
-.mob-nav {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
-  color: var(--tittle-text-color);
-  margin-bottom: 302px;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-}/*# sourceMappingURL=main.css.map */
+/* Модальне вікно+бекдроп *//*# sourceMappingURL=main.css.map */
