@@ -17,48 +17,57 @@
           >
 
           <button
-            type="button"
-            class="menu-btn"
+            class="menu-toggle js-open-menu"
             aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
+            aria-controls="mobile-menu"
           >
             <svg width="20" height="20" aria-label="Перемикач мобільного меню">
-              <use class="menu-btn__menu" href="./images/icons.svg#icon-mobile-menu"></use>
-              <use class="menu-btn__close" href="./images/icons.svg#icon-moile-close"></use>
+              <use
+                class="menu-btn__menu js-open-menu"
+                href="./images/icons.svg#icon-mobile-menu"
+              ></use>
             </svg>
           </button>
-        </div>
 
-        <div class="menu-container" id="menu-container" data-menu>
-          <ul class="mob-nav">
-            <li class="mob-nav__item">
-              <a href="./index.html" class="mob-nav__link">Студія</a>
-            </li>
-            <li class="mob-nav__item mob-nav__item--current">
-              <a href="./portfolio.html" class="mob-nav__link--current">Портфоліо</a>
-            </li>
-            <li class="mob-nav__item">
-              <a href="" class="mob-nav__link">Контакти</a>
-            </li>
-          </ul>
-          <div class="mob-contact-social">
-            <ul class="mob-contact">
-              <li class="mob-contact__item">
-                <a class="mob-contact__link" href="tel:+380961111111">+38 096 111 11 11 </a>
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg width="20" height="20" aria-label="Перемикач мобільного меню">
+                <use
+                  class="menu-btn__menu js-open-menu"
+                  href="./images/icons.svg#icon-moile-close"
+                ></use>
+              </svg>
+            </button>
+
+            <ul class="mob-nav">
+              <li class="mob-nav__item">
+                <a href="./index.html" class="mob-nav__link">Студія</a>
               </li>
-              <li class="mob-contact__item">
-                <a class="mob-contact__link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com
-                </a>
+              <li class="mob-nav__item mob-nav__item--current">
+                <a href="./portfolio.html" class="mob-nav__link--current">Портфоліо</a>
+              </li>
+              <li class="mob-nav__item">
+                <a href="" class="mob-nav__link">Контакти</a>
               </li>
             </ul>
-            <ul class="mob-social">
-              <li class="mob-social__item"><a class="mob-social__link" href="#">Instagram</a></li>
-              <li class="mob-social__item"><a class="mob-social__link" href="#">Twitter</a></li>
-              <li class="mob-social__item"><a class="mob-social__link" href="#">Facebook</a></li>
-              <li class="mob-social__item"><a class="mob-social__link" href="#">LinkedIn</a></li>
-            </ul>
+            <div class="mob-contact-social">
+              <ul class="mob-contact">
+                <li class="mob-contact__item">
+                  <a class="mob-contact__link" href="tel:+380961111111">+38 096 111 11 11 </a>
+                </li>
+                <li class="mob-contact__item">
+                  <a class="mob-contact__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="mob-social">
+                <li class="mob-social__item"><a class="mob-social__link" href="#">Instagram</a></li>
+                <li class="mob-social__item"><a class="mob-social__link" href="#">Twitter</a></li>
+                <li class="mob-social__item"><a class="mob-social__link" href="#">Facebook</a></li>
+                <li class="mob-social__item"><a class="mob-social__link" href="#">LinkedIn</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
