@@ -218,8 +218,8 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* приховані заголовки */
@@ -607,6 +607,47 @@ img {
 }
 
 /* Переваги */
+.benefits {
+  display: block;
+}
+
+.benefits__item {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.benefits__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--tittle-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.benefits__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /*Чим ми займаємось*/
 /* Команда */
 /* Клієнти */
