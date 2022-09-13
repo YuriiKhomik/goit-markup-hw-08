@@ -21,7 +21,7 @@
     }
 }
 
-.site-nav {
+.mob-nav {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
@@ -33,20 +33,10 @@
 
 .contact {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 
-
-.contact__item:last-child {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-
-    margin-bottom: 32px;
-}
 
 
 

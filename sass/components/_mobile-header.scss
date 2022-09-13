@@ -1,21 +1,11 @@
-.header {
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #ECECEC;
-}
-
-.header-section {
-    position: relative;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 .mobile-header {
-    // position: relative;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (min-width: $tablet) {
+        display: none;    
+    }
 }
 
 .menu-container {
@@ -36,4 +26,8 @@
     &.is-open {
         display: block;
     }
+}
+
+.main-header {
+    display: flex;
 }

@@ -27,9 +27,13 @@
 @import "./components/logo";
 
 
-/* стилізація хедера */
+/* стилізація мобільного хедера */
 
-@import "./components/header";
+@import "./components/mobile-header";
+
+// стилізація основного хедера
+
+@import "./components/main-header";
 
 /* герой */
 
