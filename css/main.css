@@ -588,6 +588,22 @@ img {
   transform: translate(-50%, -50%) scale(0.2);
   opacity: 0;
 }
+@media screen and (min-width: 479.98px) {
+  .modal {
+    max-width: 100%;
+    max-height: 100%;
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .modal {
+    max-width: 100%;
+    max-height: 100%;
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .modal__text {
   font-weight: 700;
@@ -697,6 +713,8 @@ img {
 .form-checked {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -752,6 +770,11 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   margin-left: 8px;
+}
+@media screen and (min-width: 1199.98px) {
+  .form-checked__text {
+    font-size: 14px;
+  }
 }
 
 .form-checked__agreement {
