@@ -936,15 +936,17 @@ img {
   text-align: center;
 }
 
-.footer-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .footer-section > .container {
   display: flex;
   flex-direction: column;
   justify-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__tablet-container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-logo {
@@ -985,7 +987,16 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-left: 165px;
+  }
 }
 
 .footer-social__title,
@@ -1059,6 +1070,12 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   outline: transparent;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe__field {
