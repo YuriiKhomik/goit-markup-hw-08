@@ -826,6 +826,20 @@ img {
 }
 
 /* Стилізація фільтра на сторінці Портфоліо */
+@media screen and (max-width: 767px) {
+  .filter {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+
 .filter__item {
   display: inline-block;
   margin-right: 8px;
