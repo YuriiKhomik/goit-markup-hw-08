@@ -221,13 +221,21 @@
 
           <ul class="team__list">
             <li class="team__item">
-              <img
-                srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x"
-                class="team__img"
-                src="./images/team1.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team1-mobile-1x.jpg 1x, ./images/team1-mobile-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="./images/team1-tablet-1x.jpg 1x, ./images/team1-tablet-2x.jpg 2x"
+                  media="(max-width:1199px)"
+                />
+                <source
+                  srcset="./images/team1-desktop-1x.jpg 1x, ./images/team1-desktop-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img class="team__img" src="./images/team1-desktop-1x.jpg" alt="Ігор Дем'яненко" />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
