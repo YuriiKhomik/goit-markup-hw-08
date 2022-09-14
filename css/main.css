@@ -217,9 +217,17 @@ img {
   }
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* приховані заголовки */
@@ -607,25 +615,39 @@ img {
 }
 
 /* Переваги */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-left: -15px;
-    margin-right: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    display: flex;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits__item {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
+}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (max-width: 1199px) {
   .benefits__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__item:not(:first-child) {
+    margin-left: 30px;
   }
 }
 
@@ -648,7 +670,11 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .benefits__title {
+    text-align: center;
+  }
 }
 
 .benefits__text {
@@ -657,6 +683,9 @@ img {
 }
 
 /*Чим ми займаємось*/
+.whatwedo {
+  padding-top: 0;
+}
 @media screen and (max-width: 1199.98px) {
   .whatwedo {
     display: none;
@@ -696,7 +725,6 @@ img {
 
 /* Команда */
 .team {
-  padding-top: 60px;
   background-color: var(--secondary-bg-color);
 }
 
@@ -790,8 +818,6 @@ img {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 
 .clients__link {
@@ -873,8 +899,6 @@ img {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
   }
 }
 
