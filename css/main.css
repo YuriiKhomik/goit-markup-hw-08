@@ -987,6 +987,9 @@ img {
   .portfolio__item {
     margin-bottom: 30px;
   }
+  .portfolio__item:first-child {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio__item {
