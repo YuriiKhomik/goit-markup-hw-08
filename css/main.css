@@ -444,11 +444,6 @@ img {
 
 .main-header {
   display: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--tittle-text-color);
 }
 @media screen and (min-width: 767.98px) {
   .main-header {
@@ -460,11 +455,6 @@ img {
 .site-nav {
   display: flex;
   margin-left: 87px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
 }
 @media screen and (min-width: 1199.98px) {
   .site-nav {
@@ -491,7 +481,8 @@ img {
   background-color: var(--accent-color);
   border-radius: 2px;
 }
-.site-nav__item > .site-nav__link {
+
+.site-nav__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -502,12 +493,8 @@ img {
 .contact {
   display: flex;
   flex-direction: column;
-  margin-left: 96px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: var(--tittle-text-color);
+  align-items: flex-start;
+  margin-left: 90px;
 }
 @media screen and (min-width: 1199.98px) {
   .contact {
@@ -529,10 +516,9 @@ img {
 }
 
 .contact__link {
-  color: var(--tittle-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition-duration: 250ms;
@@ -541,7 +527,7 @@ img {
 .contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
 }
-@media screen and (min-width: 1199.98px) {
+@media screen and (min-width: 768px) {
   .contact__link {
     display: flex;
     align-items: center;
@@ -554,11 +540,16 @@ img {
 .contact__icon {
   display: none;
 }
-@media screen and (min-width: 1199.98px) {
+@media screen and (min-width: 768px) {
   .contact__icon {
     display: flex;
-    margin-right: 10px;
     fill: currentColor;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .contact__icon {
+    margin-right: 10px;
   }
 }
 
