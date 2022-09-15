@@ -942,11 +942,15 @@ img {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 48px;
+  }
+}
 
 .filter__item {
   display: inline-block;
   margin-right: 8px;
-  margin-bottom: 15px;
 }
 
 .filter__button {
